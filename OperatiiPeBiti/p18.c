@@ -6,6 +6,8 @@ un număr pe 8 biți fără semn (n) și o poziție (p). Funcția va returna num
 care octetul de pe poziția p va fi inlocuit cu numărul n. Octeții se numără se la dreapta
 (cel mai puțin semnificativ, poziția 0) spre stanga*/
 
+
+//asta e inca gresita
 void print_bit_32 (uint32_t nr)
 {
     uint32_t mask = 0x8000; // 0b1000000000000000
