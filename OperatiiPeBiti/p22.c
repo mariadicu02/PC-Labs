@@ -19,6 +19,9 @@ uint64_t function(uint8_t n7, uint8_t n6, uint8_t n5, uint8_t n4, uint8_t n3, ui
     result = aux7 | aux6 | aux5 | aux4 | aux3 | aux2 | aux1 | n0;
     return result;
 }
+/*Prin adăugarea cast-ului (uint64_t) înainte de n7, n6, etc., vă asigurați că operația de 
+deplasare la stânga este făcută pe un tip de date uint64_t, evitând astfel avertizarea de 
+depășire a dimensiunii tipului (left shift count >= width of type).*/
 
 void print_bit_8 (uint8_t nr)
 {
