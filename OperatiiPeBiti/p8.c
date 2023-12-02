@@ -70,7 +70,5 @@ int main(){
     resetare(n);
     printf("Numarul dupa complementare: ");
     complementare(n);
-    
-
     return 0;
 }
