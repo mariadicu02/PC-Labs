@@ -51,7 +51,5 @@ int main(){
     printf("Reprezentarea numarului in binar: ");
     print_bit_8(n);
     printf("Numarul de biti de 1 este: %d", nr_biti_1(n));
-
-
     return 0;
 }
