@@ -58,9 +58,6 @@ int main(){
     
     int result = suma_lsb(n);
     printf("Suma ultimilor 4 LSB este: %d", result);
-
-
-
     return 0;
 }
 
