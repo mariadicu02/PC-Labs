@@ -37,6 +37,7 @@ char impachetare(uint8_t a, uint8_t b)
 }
 
 
+
 int main(){
 
     uint8_t a,b;
