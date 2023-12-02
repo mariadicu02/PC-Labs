@@ -6,7 +6,6 @@
 /*Write a function invert(x,p,n) that returns x with the n bits that begin at
 position p inverted (i.e., 1 changed into 0 and vice versa), leaving the others unchanged.*/
 
-
 uint32_t invert(uint32_t x, int p, int n) {
     // Create a mask with 1s in the inverted range
     uint32_t invert_mask = ~(~0u << n) << (p - n + 1);

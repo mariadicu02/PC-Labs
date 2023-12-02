@@ -58,6 +58,5 @@ int main() {
     print_bit_32(result);
 
     printf("Result (decimal): %u\n", result);
-
     return 0;
 }
