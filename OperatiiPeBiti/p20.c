@@ -74,7 +74,5 @@ int main(){
     printf("Rezultatul este %d \n", result);
     printf("Reprezentarea pe biti a rezultatului este: \n");
     print_bit_16(result);
-
-
     return 0;
 }
