@@ -51,7 +51,6 @@ int main(){
     print_bit_8(result);
     printf("Pt despachetare: ");
     printf("Am folosit numerele %hhd si %hhd", (result >> 4), (result & 0x0F));
-
     return 0;
 }
 
