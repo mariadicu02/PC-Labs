@@ -55,9 +55,6 @@ int main(){
     print_bit_8(n);
     sign_bit(n);
 
-
-
-
     return 0;
 }
 
