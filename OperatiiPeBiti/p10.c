@@ -35,11 +35,11 @@ void sign_bit(uint8_t n){
     {
         n = n >> 1;
     }
+
     if(( n & mask) == 0)
     {
         printf("numarul este pozitiv");
     }
-
     else{
         printf("Numarul este negativ");
     }
