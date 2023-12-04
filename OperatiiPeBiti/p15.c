@@ -42,6 +42,7 @@ int count_segm(uint8_t n){
     }while(n != 0);
     count++;
     return count;
+    
 }
 
 
