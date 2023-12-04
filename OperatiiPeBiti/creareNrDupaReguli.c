@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 #include<stdint.h>
 
 /*4.Scrieti o functie ce primeste doua numere naturale pe n biti si returneaza un numar natural dupa urm reguli:
