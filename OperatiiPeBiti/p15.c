@@ -31,9 +31,9 @@ int count_segm(uint8_t n){
 
     int count = 1;
     int aux;
-    aux = n & 1;//ca sa iau mereu ultima cifra din n
+    aux = n & 1;//folosesc aux pt a stoca ultimul bit procesat
     do{
-        if ( ( n & 1) != aux)//verific daca actuala ultima cifra e diferita cu fosta ult cifra
+        if ( ( n & 1) != aux)//verific daca actuala ultima cifra e diferita de aux
         {
             count++;//daca e dif inseamna ca am trecut la alt segm de biti
             aux = n & 1;//reactualizez auxu sa ia din nou ult cifra

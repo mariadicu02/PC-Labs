@@ -2,8 +2,10 @@
 #include<stdint.h>
 
 /*Write a function setbits(x,p,n,y) that returns x with the n bits that begin at
-position p set to the rightmost n bits of y, leaving the other bits unchanged. */
-
+position p set to the rightmost n bits of y, leaving the other bits unchanged. 
+Deci am de facut o functie care returneaza x cu cu cei n biti care incep la pozitia p setati la valoarea
+la valoarea ultimilor n biti din dreapta de tot ai lui y, lasand restul bititlor neschimbati.
+*/
 
 uint32_t setbits(uint32_t x, int p, int n, uint32_t y) {
     // Create a mask to clear the bits in the specified range
