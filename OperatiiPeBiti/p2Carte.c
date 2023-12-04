@@ -1,55 +1,39 @@
 #include <stdio.h>
 #include <stdint.h>
 
-
-
 /*Write a function invert(x,p,n) that returns x with the n bits that begin at
-position p inverted (i.e., 1 changed into 0 and vice versa), leaving the others unchanged.*/
+position p inverted (i.e., 1 changed into 0 and vice versa), leaving the others unchanged.
+Scrie o functie invert care returneaza x cu cei n biti incepand cu pozitia p inversati adica negati.
+*/
 
-uint32_t invert(uint32_t x, int p, int n) {
-    // Create a mask with 1s in the inverted range
-    uint32_t invert_mask = ~(~0u << n) << (p - n + 1);
+uint32_t invert_bits(uint32_t x, int p, int n) {
+    // Create a mask with 1s in the inverted positions
+    uint32_t mask = ((1u << n) - 1) << p;
 
-    // XOR the inverted bits in the range with x
-    return x ^ invert_mask;
-}
-
-void print_bit_32(uint32_t nr) {
-    uint32_t mask = 0x80000000;
-    int n = 0;
-    for (int i = 0; i < 32; i++) {
-        if ((nr & mask) == 0) {
-            printf("0");
-        } else {
-            printf("1");
-        }
-        mask = mask >> 1;
-        n++;
-        if (n % 4 == 0)
-            printf(" ");
-    }
-    printf("\n");
+    // Invert the selected bits in x using XOR
+    return x ^ mask;
 }
 
 int main() {
-    uint32_t x;
+    uint32_t x, result;
     int p, n;
 
-    printf("Enter x (32 bits): ");
+    // Input values
+    printf("Enter an integer x: ");
     scanf("%u", &x);
 
-    printf("Enter p: ");
+    printf("Enter the starting position p: ");
     scanf("%d", &p);
 
-    printf("Enter n: ");
+    printf("Enter the number of bits to invert n: ");
     scanf("%d", &n);
 
-    uint32_t result = invert(x, p, n);
+    // Call the invert_bits function
+    result = invert_bits(x, p, n);
 
-    printf("Result (binary): ");
-    print_bit_32(result);
-
-    printf("Result (decimal): %u\n", result);
+    // Display the result
+    printf("Original number: %u\n", x);
+    printf("Result after inverting bits: %u\n", result);
 
     return 0;
 }
