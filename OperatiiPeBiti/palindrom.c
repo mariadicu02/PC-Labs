@@ -10,6 +10,7 @@ void print_bit_32 (uint32_t nr)
     uint32_t mask = 0x80000000; // 0b1000000000000000
     uint32_t i = 0;
     int n=0;
+    
     for (i = 0; i < 32; i++)
     {
     if ((nr & mask) == 0)
