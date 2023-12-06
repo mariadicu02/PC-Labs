@@ -65,17 +65,17 @@ void sort_array(uint16_t *a, int size)
 	do{
 		s = 0;
 		for (i = 1; i < size; i++)
-		{      
+		{
             	if (*(a+i-1) > *(a+i))
-			{             
+			{
 				
-				aux = *(a+i-1);                 
+				aux = *(a+i-1);
 				*(a+i-1) = *(a+i);
 				*(a+i) = aux;
-				s = 1;                            
+				s = 1;
 			}
 		}
-	} while (s);                       
+	} while (s);
 }
 
 void double_array(uint16_t *a, int size)
