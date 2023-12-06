@@ -10,7 +10,7 @@
 maxim 30000 de elem
 uint16_t tab[30000];
 int read_array_stdin(uint16_t *a, int size);
-    if(scanf("%d",&a[i]) != 1)
+if(scanf("%d",&a[i]) != 1)
 void print_array(uint16_t *a, int size)
 uint16_t max_array(uint16_t *a, int size)
 uint16_t min_array(uint16_t *a, int size)
