@@ -102,7 +102,7 @@ int main(){
     printf("%hd e maximul\n", max_array(tab, count));
     printf("%hd e minimul\n", min_array(tab, SIZE));
     sort_array(tab, SIZE);
-   
+
     printf("Vectorul sortat: \n");
     print_array(tab, SIZE);
     
