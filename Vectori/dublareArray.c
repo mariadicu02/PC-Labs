@@ -6,7 +6,7 @@
 #define SIZE 5
 
 
-/* 
+/*
 maxim 30000 de elem
 uint16_t tab[30000];
 int read_array_stdin(uint16_t *a, int size);
