@@ -88,7 +88,7 @@ void double_array(uint16_t *a, int size)
 
     *(a+i)=*(a+i) * 2;
     size++;
-    i++;+
+    i++;
     }
 }
 
